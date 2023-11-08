@@ -1,9 +1,5 @@
 const {readFile} = require('node:fs/promises')
-
-const errors = Object.freeze({
-    FILE_LENGTH_SIZE_INVALID: 'The length of content is invalid',
-    HEADERS_INVALID: 'The headers of file have content invalid',
-})
+const errors = require('./contents')
 
 const config = Object.freeze({
     headers: ['id','name','profession','age'],
